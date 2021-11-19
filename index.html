@@ -2,7 +2,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>我爱你！</title>
+    <title>超❤清</title>
     <link type="text/css" rel="stylesheet" href="./css/default.css">
     <script type="text/javascript" src="./css/jquery.min.js"></script>
     <script type="text/javascript" src="./css/jscex.min.js"></script>
@@ -23,7 +23,7 @@
     </style>
 </head>
 <body>
-<audio autoplay="autopaly">
+<audio id="bgm">
     <source src="music/love.mp3" type="audio/mp3"/>
 </audio>
 <div id="main">
@@ -32,7 +32,7 @@
             <div id="code">
                 <font color="#232021">  <!-- 正文颜色 -->
                     <span class="say">飞过人间的无常 才懂爱才是宝藏</span><br>
-                    <span class="say">不管世界变得怎麽样 只要有你就会是天堂</span><br>
+                    <span class="say">不管世界变得怎么样 只要有你就会是天堂</span><br>
                     <span class="say">像孩子依赖着肩膀 像眼泪依赖着脸庞</span><br>
                     <span class="say">你就像天使一样 给我依赖 给我力量</span><br>
                     <span class="say">像诗人依赖着月亮 像海豚依赖海洋</span><br>
@@ -40,7 +40,7 @@
 
                     <span class="say">Baby 你就是我的唯一</span><br>
                     <span class="say">两个世界都变形 回去谈何容易</span><br>
-                    <span class="say">确定你就是我的唯一</span><br>
+                    <span class="say">确定 你就是我的唯一</span><br>
                     <span class="say">独自对着电话说我爱你 我真的爱你</span><br>
                     <span class="say">Baby 我已不能多爱你一些</span><br><br>
 
@@ -49,10 +49,15 @@
                     <span class="say">我轻轻地尝一口 这香浓的诱惑</span><br>
                     <span class="say">我喜欢的样子你都有</span><br><br>
 
-                    <span class="say">我的爱一天 比一天 更热烈</span><br>
-                    <span class="say">要给你多些 再多些 不停歇</span><br>
+                    <span class="say">我的爱一天 比一天 还要坚决</span><br>
+                    <span class="say">要给你多些 然后再多一些</span><br>
                     <span class="say">让恋人钟爱的每句誓言 OH OH</span><br>
                     <span class="say">不再难追 全都实现</span><br><br>
+
+                    <span class="say">你是我心中的《天使》</span><br>
+                    <span class="say">你是我生命中的《唯一》</span><br>
+                    <span class="say">想和你继续《甜甜的》生活</span><br>
+                    <span class="say">我会《每天爱你多一些》</span>
                 </font>
             </div>
         </div>
@@ -222,6 +227,7 @@
             $await(moveAnimate());
 
             textAnimate().start();
+            document.getElementById('bgm').play();
 
             $await(jumpAnimate());
         }));
